@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  body, a, button, input, textarea {
+    cursor: none !important;
+  }
+}
+
+/* Custom Outlined Text for Hero Background */
+.text-outline-green {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(245, 240, 230, 0.4); 
+}
+
+.text-outline-cream {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(26, 54, 41, 0.8); 
+}
+
+/* Star Shapes */
+.star-icon {
+  clip-path: polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);
+  background-color: currentColor;
+}
+
+/* Rounded Arch Shape */
+.arch-mask {
+  border-radius: 9999px 9999px 0 0;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
